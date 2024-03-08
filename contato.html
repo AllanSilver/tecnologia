@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Tecnologia da Informação</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: linear-gradient(to right, rgb(172, 178, 180), rgb(64, 70, 73));
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s; /* Adiciona uma transição suave de cor */
+        }
+        nav ul li a:hover {
+            color: lightgreen; /* Muda a cor para verde claro ao passar o mouse */
+        }
+        main {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            min-width: 280px;
+            max-width: 800px;
+            border: 1px solid #333;
+            box-shadow: rgba(0, 0, 0, 0.50) 4px 6px 4px;
+        }
+        img {
+            border-radius: 15px;
+            margin: 10px;
+            border: 1px solid #333;
+            box-shadow: rgba(0, 0, 0, 0.50) 4px 6px 4px;
+        }
+        h1 {
+            text-shadow: rgba(0, 0, 0, 0.50) 2px 2px 2px;
+            margin: 0;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            cursor: pointer;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contato - Tecnologia da Informação</h1>
+    </header>
+    <nav>
+        <img src="fale.jpg" width="250" height="100">
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </nav>
+    <main> 
+        <h2>Entre em contato conosco</h2>
+        <p>Preencha o formulário abaixo:</p>
+        <form action="https://formsubmit.co/allansilveiraadv@gmail.com" method="POST">
+            <label for="nome">Nome:</label><br>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" class="inputUser" required><br>
+            <label for="email">E-mail:</label><br>
+            <input type="text" name="email" id="email" placeholder="Digite seu e-mail" class="inputUser" required><br>
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" class="inputUser" required></textarea><br>
+            <input type="submit" id="enviar" value="Enviar" />
+            <input type="hidden" name="_subject" value="Você recebeu nova mensagem do site!" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_autoresponse" value="Entraremos em contato o mais breve possível" />
+            <input type="hidden" name="_template" value="table" />
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
+
+
+
+
